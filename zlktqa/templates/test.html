@@ -3,21 +3,134 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <script>document.createElement("myHero")</script>
+    <style>
+        myHero{
+            display: block;
+            background-color: #ddd;
+            padding: 50px;
+            font-size: 30px;
+        }
+    </style>
+    <style type="text/css">
+    #div1, #div2
+    {float:left; width:100px; height:35px; margin:10px;padding:10px;border:1px solid #aaaaaa;}
+    </style>
+    <script>
+    function allowDrop(ev)
+    {
+        ev.preventDefault();
+    }
+
+    function drag(ev)
+    {
+        ev.dataTransfer.setData("Text",ev.target.id);
+    }
+
+    function drop(ev)
+    {
+        ev.preventDefault();
+        var data=ev.dataTransfer.getData("Text");
+        ev.target.appendChild(document.getElementById(data));
+    }
+    </script>
 </head>
+
+
 <body>
 <script>
     document.write("hello world!")
 </script>
 <noscript>抱歉，你的浏览器不支持</noscript>
 <p id="demo">javascript可以触发事件</p>
+
 <script>
     function myFunction() {
         x=document.getElementById("demo")
         x.innerHTML="hello javascript"
         x.style.color="#ff4522"
-
     }
 </script>
+
 <button type="button" onclick="myFunction()">点击</button>
+
+<myHero>我的第一个新元素</myHero>
+
+<canvas id="myCanvas" width="200" height="100" style="border: 1px solid #000">您的浏览器不支持HTML5</canvas>
+<script>
+    var c=document.getElementById("myCanvas");
+    var ctx=c.getContext("2d");
+    ctx.moveTo(0,0);
+    ctx.lineTo(200,100);
+    ctx.stroke();
+</script>
+<script>
+    var c=document.getElementById("myCanvas");
+    var ctx=c.getContext("2d");
+    ctx.beginPath();
+    ctx.arc(95,50,40,0,2*Math.PI);
+    ctx.stroke();
+</script>
+<canvas id="myCanvas2" width="200" height="100" style="border: 1px solid #000">您的浏览器不支持HTML5</canvas>
+<script>
+    var c=document.getElementById("myCanvas2");
+    var ctx=c.getContext("2d");
+    ctx.font="30px Arial";
+    ctx.fillText("hello",10,50);
+    ctx.strokeText("hello",100,50);
+</script>
+<p>
+    <svg xmlns="http://www.w3.org/2000/svg" version="1.1" height="190">
+   <polygon points="100,10 40,180 190,60 10,60 160,180"
+   style="fill:lime;stroke:purple;stroke-width:5;fill-rule:evenodd;"/>
+</svg>
+    <div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)">
+	<img src="img_w3slogo.gif" draggable="true" ondragstart="drag(event)" id="drag1" width="88" height="31"></div>
+    <div id="div2" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+</p>
+
+
+
+<p id="demo">点击获取坐标（可能需要比较长时间）</p>
+<button onclick="getLocation()">获取坐标</button>
+
+<script>
+    var x=document.getElementById("demo");
+    function getLocation() {
+        if (navigator.geolocation)
+        {
+            navigator.geolocation.getCurrentPosition(showPosition,showError);
+        }
+        else
+        {
+            x.innerHTML="该浏览器不支持获取地理位置"
+        }
+    }
+
+    function showPosition(position) {
+        x.innerHTML="纬度：" + position.coords.latitude + "<br>经度：" + position.coords.longitude;
+    }
+
+    function showError(error)
+    {
+        switch(error.code)
+        {
+            case error.PERMISSION_DENIED:
+                x.innerHTML="用户拒绝对获取地理位置的请求。";
+                break;
+            case error.POSITION_UNAVAILABLE:
+                x.innerHTML="位置信息是不可用的。";
+                break;
+            case error.TIMEOUT:
+                x.innerHTML="请求用户地理位置超时。";
+                break;
+            case error.UNKNOWN_ERROR:
+                x.innerHTML="未知错误。";
+                break;
+        }
+    }
+
+</script>
+
 </body>
 </html>
