@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		/*div {
+			width: 100px;
+			height: 100px;
+			background: red;
+			margin:50px 100px 150px;
+		}*/
+		#box1 {
+			width: 300px;
+			background: blue;
+			/*border: 1px solid #000;*/
+			/*overflow: hidden;*/
+			/*padding-top: 100px;*/
+		}
+		#box2 {
+			width: 300px;
+			height: 200px;
+			background: yellow;
+			/*margin-top: 100px;*/
+			margin-bottom: 30px;
+		}
+		#box3 {
+			width: 300px;
+			height: 200px;
+			background: red;
+			margin-top: 30px;
+		}
+	</style>
+</head>
+<body>
+	<div id="box1">
+		<div id="box2"></div>
+		<div id="box3"></div>
+
+	</div>
+	<!-- 
+		margin 外边距
+		margin-top 上外边距
+		margin-right 右外边距
+		margin-bottom 下外边距
+		margin-left 左外边距
+
+		margin的复合写法
+		margin:10px;  一个值代表  上右下左都是10px
+		margin:10px 20px; 两个值   第一个值代表上下  第二个值代表左右
+		margin:10px 20px 40px; 三个值 第一个值代表上 第二个值代表左右 第三个值代表下
+		margin:10px 20px 40px 80px; 四个值 第一个值代表上 第二个值代表右 第三个值代表下 第四个值代表左
+
+		标签的嵌套  确定父子级关系
+		1.第一个子级的margin-top会在特定的情况下穿透父级
+			规避方法：
+				1.给父级加边框
+				2.给父级加overflow:hidden;
+				3.不要用margin-top 父级的padding-top代替
+		2.兄弟关系的margin-top和margin-bottom会叠压
+	 -->
+</body>
+</html>
