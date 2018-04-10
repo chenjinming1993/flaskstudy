@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+	
+		div,span {
+			border: 1px solid red;
+			width: 100px;
+			height: 100px;
+			padding: 10px;
+			margin: 50px;
+		}
+	
+	</style>
+	<link rel="stylesheet" href="css/reset.css">
+</head>
+<body>
+	<!-- 
+		内联属性的标签
+			内联标签
+				特性：
+					1.同属性的标签排在同一排
+					2.内容撑开宽度
+					3.不支持宽高，不支持上下的padding和margin
+					4.代码换行被解析，间距大小取决于父级的font-size的大小
+
+				span标签
+
+				strong标签
+				语义：强调
+				默认样式：font-weight
+
+				em标签
+				语义：强调
+				默认样式：font-style
+
+				a标签
+				<a href="需要链接的网页地址" target="打开网页的方式"></a>
+				语义：超链接
+				默认样式：color text-decoration cursor
+					温馨提示：
+						href属性中：
+						1.如果要链接一个网址的话，一定要加 http://
+						2.#代表链接到当前页
+						target
+						_self 默认在当前窗口打开
+						_blank 在新窗口打开
+
+			内联块块标签
+	 -->
+	 <div>div1</div>
+	 <div>div2</div>
+	 <div>div3</div>
+	 <div>div4</div>
+
+	 <span>span1</span>
+	 <span>span2</span>
+	 <span>span3</span>
+	 <span>span4</span>
+	 <a href="http://www.baidu.com" target="blank">链接到百度</a>
+	 <a href="##">这是A2</a>
+	 <a href="##">这是A3</a>
+	 <a href="##">这是A4</a>
+</body>
+</html>
