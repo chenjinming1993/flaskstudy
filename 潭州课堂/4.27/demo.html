@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>Tank</title>
+  <style>
+	body{
+		margin:0px;
+	}
+	.tank{
+		width:200px;
+		height:100px;
+		margin:100px auto;
+		/* background:green; */
+		border:solid;
+	}
+	.tank .battery{
+		width:100px;
+		height:50px;
+		margin:auto;
+		background:#2d3d86;
+	}
+	.tank .battery:before{/*在元素内容之前添加内容*/
+		content:'';
+		display:block;/*让元素支持宽高*/
+		width:20px;
+		height:20px;
+		margin:auto;
+		background:white;
+		border-radius:50%; /*圆角属性：正方形变成圆形*/
+		animation:go 3s infinite linear,go1 400ms infinite linear;
+		box-shadow:0px 50px 0px -7px red,0px 75px 0px -7px red,0px 100px 0px -7px red,0px 125px 0px -7px red;
+	}
+/* 	.tank .battery .spiale{
+		width:20px;
+		height:20px;
+		margin:auto;
+		background:white;
+		border-radius:50%; 圆角属性：正方形变成圆形
+		animation:go 3s infinite linear,go1 400ms infinite linear;
+		box-shadow:0px 50px 0px -7px red,0px 75px 0px -7px red,0px 100px 0px -7px red,0px 125px 0px -7px red;
+	} */
+	.tank .battery:after{
+		content:'';
+		display:block;
+		width:4px;
+		height:25px;
+		background:white;
+		margin:-2px auto 0px;
+		transform-origin:top;/*设置变换基点：上边中点*/
+		animation:go 3s infinite linear;/*animation:调用动画  动画名字 动画周期 infinite无限次 linear匀速*/
+	}
+/* 	.tank .battery .gun{
+		width:4px;
+		height:25px;
+		background:white;
+		margin:-2px auto 0px;
+		transform-origin:top;设置变换基点：上边中点
+		animation:go 3s infinite linear;animation:调用动画  动画名字 动画周期 infinite无限次 linear匀速
+	} */
+	@keyframes go{/*定义动画 动画名字*/
+		0%{transform:rotate(-60deg)} /*变换属性：旋转（负值 逆时针）*/
+		50%{transform:rotate(60deg)} /*变换属性：旋转（正值 顺时针）*/
+		100%{transform:rotate(-60deg)}
+	}
+	@keyframes go1{
+		0%{box-shadow:0px 50px 0px -7px red,0px 75px 0px -7px red,0px 100px 0px -7px red,0px 125px 0px -7px red;}
+		100%{box-shadow:0px 75px 0px -7px red,0px 100px 0px -7px red,0px 125px 0px -7px red,0px 150px 0px -7px red;}
+	}
+  </style>
+ </head>
+ <body>
+	<div class='tank'>
+		<div class='battery'>
+			<div class='spiale'></div>
+			<div class='gun'></div>
+		</div>
+	</div>
+	<!-- 
+		1.长方形=div 盒子 盒模型 层 元素 容器
+		2.class=名字 命名规范 小写英文 不能数字开头和结尾 见名知意  企业命名参考.text
+		3.margin 外边距 自身盒子边界到外服盒子边界的距离
+		4.box-shadow 阴影属性：水平位移 竖直位移 模糊半径 阴影大小 颜色
+
+	-->
+
+ </body>
+</html>
