@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>Document</title>
+  <style>
+	div{
+		overflow:hidden;/*规定元素溢出如何显示 hidden隐藏 重新检测盒子里面的内容*/
+		width:1160px;
+		/* height:167px; */
+		background-color:red;
+		/* margin-top:200px; */
+		margin:200px auto 0;
+		padding:20px;
+	}
+	div ul{
+		width:2000px;
+		/* display:flex;弹性盒模型 */
+		list-style:none;/*列表风格 去掉 去掉ulli的小黑圆点*/
+	}
+	/*h后代选择器*/
+	div ul li{
+		overflow:hidden;
+		float:left;
+		width:185px;
+		height:125px;
+		/* border:2px solid blue; */
+		background:red;
+		margin-right:10px;
+		border-radius:5px;/*圆角*/
+		transition:0.5s cubic-bezier(.18,1.01,.52,1.47);/*过渡 css3 允许一个样式到另一个样式有一个平滑的过渡*/
+	}
+	div ul:hover li{
+		width:107px;
+	}
+	div ul li:hover{
+		width:575;
+	}
+  </style>
+ </head>
+ <body>
+	<!--
+		ul li 后代选择器
+		ul,p 多元素选择器
+		ul .li 类选择器 class选择器
+	-->
+	<div>
+		<ul>
+			<li><img scr='img/'></li>
+			<li>长泽雅美</li>
+			<li>石原里美</li>
+			<li>吉冈里帆</li>
+			<li></li>
+			<li></li>
+		</ul>
+	</div>
+ </body>
+</html>
