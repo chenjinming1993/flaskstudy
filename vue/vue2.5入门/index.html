@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>属性绑定和双向数据绑定</title>
+    <script src="https://cdn.bootcss.com/vue/2.4.2/vue.min.js"></script>
+</head>
+<body>
+    <div id="root">
+        <div :title="title">hello</div>
+        <input v-model:value="content"/>
+        <div>{{ content }}</div>
+    </div>
+
+    <script>
+        new Vue({
+            el:"#root",
+            data:{
+                title:"this is hello",
+                content:"this is content"
+            }
+        })
+    </script>
+</body>
+</html>
