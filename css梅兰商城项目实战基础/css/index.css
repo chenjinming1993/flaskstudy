@@ -21,11 +21,11 @@ a{
 .top_page_r{
     line-height: 26px;
 }
-.top_page_r li{
+.top_page_r ul li{
     float: left;
     padding-right: 10px;
 }
-.top_page_r li s{
+.top_page_r ul li s{
     width: 14px;
     height: 12px;
     background: url(../img/sprite.png);
