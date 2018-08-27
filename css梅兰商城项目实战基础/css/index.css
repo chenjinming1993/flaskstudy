@@ -28,7 +28,28 @@ a{
 .top_page_r ul li s{
     width: 14px;
     height: 12px;
-    background: url(../img/sprite.png);
+    background: url(../img/img.png);
     display: inline-block;
     vertical-align: middle;
+}
+.logo{
+    width: 970px;
+    height: 98px;
+    background: red;
+    margin: 0 auto;
+}
+.logo_l{
+    width: 190px;
+    height: 75px;
+    /* background: rebeccapurple; */
+    /* padding: 24px 0 19px 9px; */
+    margin: 20px 0 19px 9px;
+    background: url(../img/img.png);
+    background-position: -20px 0;
+    text-indent: -1000em;
+}
+.logo_r{
+    width: 530px;
+    height: 42px;
+    background: pink;
 }
