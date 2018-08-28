@@ -43,7 +43,7 @@ a{
     height: 75px;
     /* background: rebeccapurple; */
     /* padding: 24px 0 19px 9px; */
-    margin: 10px 0 19px 10px;
+    margin: 10px 0 10px 10px;
     background: url(../img/img.png);
     background-position: -20px 0;
     text-indent: -1000em;
@@ -70,4 +70,27 @@ a{
     color: white;
     background: #3a98ff;
     border: none;
+}
+.nav{
+    width: 970px;
+    height: 25px;
+    /* background: rgba(0, 255, 255, 0.788); */
+    margin: 0 auto;
+    border-bottom: 2px solid #0266a3;
+}
+.nav li{
+    padding: 0 10px 0 10px;
+    line-height: 25px;
+    font-size: 14px;
+    font-weight: bold;
+    float: left;
+}
+.nav li a{
+    color: #0266a3;
+}
+.nav li:hover{
+    background: #0266a3;
+}
+.nav li:hover a{
+    color: white;
 }
