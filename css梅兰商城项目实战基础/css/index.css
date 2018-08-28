@@ -28,7 +28,7 @@ a{
 .top_page_r ul li s{
     width: 14px;
     height: 12px;
-    background: url(../img/img.png);
+    background: url(../img/img2.png);
     display: inline-block;
     vertical-align: middle;
 }
@@ -44,7 +44,7 @@ a{
     /* background: rebeccapurple; */
     /* padding: 24px 0 19px 9px; */
     margin: 10px 0 10px 10px;
-    background: url(../img/img.png);
+    background: url(../img/img2.png);
     background-position: -20px 0;
     text-indent: -1000em;
 }
@@ -104,8 +104,34 @@ a{
 .subNav{
     width: 200px;
     height: 210px;
-    background: #3a98ff;
+    background: #4d92db;
     margin-right: 11px;
+}
+.subNav h2{
+    height: 30px;
+    line-height: 30px;
+    padding-left: 20px;
+    color: white;
+    background-color: #0266a3;
+    font-size: 14px;
+    font-weight: bold;
+}
+.subNav li{
+    font-size: 15px;
+    padding-top: 7px;
+    margin-left: 11px;
+}
+.subNav li a{
+    padding-left: 8px;
+    vertical-align: middle;
+}
+.subNav li s{
+    width: 22px;
+    height: 21px;
+    background: url(../img/img2.png);
+    background-position: -215px 0;
+    display: inline-block;
+    vertical-align: middle;
 }
 .ad{
     width: 520px;
