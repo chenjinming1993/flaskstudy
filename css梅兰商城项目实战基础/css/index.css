@@ -94,3 +94,26 @@ a{
 .nav li:hover a{
     color: white;
 }
+.banner{
+    width: 970px;
+    height: 210px;
+    /* background: pink; */
+    margin: 0 auto;
+    margin-top: 10px;
+}
+.subNav{
+    width: 200px;
+    height: 210px;
+    background: #3a98ff;
+    margin-right: 11px;
+}
+.ad{
+    width: 520px;
+    height: 210px;
+    background: rebeccapurple;
+}
+.message{
+    width: 230px;
+    height: 210px;
+    background: yellowgreen;
+}
