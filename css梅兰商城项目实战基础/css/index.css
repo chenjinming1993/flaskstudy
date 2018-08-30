@@ -142,13 +142,13 @@ a{
 .message{
     width: 230px;
     height: 210px;
-    background: yellowgreen;
+    /* background: yellowgreen; */
 }
 .message_top{
     height: 95px;
     background: #F7FAFF;
     border: 1px solid #dddddd;
-    margin-bottom: 21px;
+    margin-bottom: 13px;
 }
 .message_top_1{
     margin: 10px 0 0 15px;
@@ -168,6 +168,33 @@ a{
     margin: 13px 12px 0 10px;
 }
 .message_bottom{
-    height: 92px;
+    height: 100px;
     background: #F7F7F7;
+}
+.message_bottom .findMessage{
+    text-align: center;
+    padding-top: 10px;
+    font-size: 15px;
+    font-weight: bold;
+    color: #999999
+}
+.message_bottom .phone{
+    text-align: center;
+    margin-top: 6px;
+    font-size: 18px;
+    color: #4d92db;
+}
+.message_bottom s{
+    width: 30px;
+    height: 30px;
+    background: url(../img/img3.png) -215px -35px;
+    display: inline-block;
+    vertical-align: middle;
+}
+.message_bottom .message_bottom_recall{
+    width: 88px;
+    height: 32px;
+    background: url(..//img/img3.png) -290px 0;
+    margin-top: 1px;
+    margin-left: 70px;
 }
