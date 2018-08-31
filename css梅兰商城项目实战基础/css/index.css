@@ -208,3 +208,57 @@ a{
     font-weight: bold;
     line-height: 34px;
 }
+.product{
+    width: 970px;
+    height: 345px;
+    /* background: #3a98ff; */
+    margin: 12px auto 0;
+}
+.product .product_l{
+    width: 728px;
+    height: 345px;
+    /* background: red; */
+    border: 1px solid #dddddd;
+}
+.product_l_top,.product_l_bottom{
+    height: 155px;
+    /* background: #4d92db; */
+    padding: 17px 13px 0 13px;
+}
+.product_l_line{
+    height: 1px;
+    background: #dddddd;
+}
+.product_l_shop{
+    width: 350px;
+    height: 146px;
+    /* background: rebeccapurple; */
+}
+.product_l_buy{
+    width: 99px;
+    height: 143px;
+    /* background: red; */
+}
+.product_l_img{
+    width: 97px;
+    height: 97px;
+    /* background: pink; */
+    border: 1px solid #dddddd;
+}
+.product_l_gobuy{
+    width: 99px;
+    height: 25px;
+    background: #4d92db;
+    color: white;
+    margin-top: 12px;
+}
+.product_l_explain{
+    width: 250px;
+    height: 143px;
+    background: yellow;
+}
+.product .product_r{
+    width: 230px;
+    height: 345px;
+    background: pink;
+}
