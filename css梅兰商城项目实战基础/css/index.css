@@ -245,6 +245,15 @@ a{
     /* background: pink; */
     border: 1px solid #dddddd;
 }
+.product_img1{
+    width: 88px;
+    height: 62px;
+    background: url(..//img/img3.png) 0 -80px;
+    display: inline-block;
+    vertical-align: middle;
+    /* text-align: center; */
+    margin: 18px 5px;
+}
 .product_l_gobuy{
     width: 99px;
     height: 25px;
@@ -255,7 +264,34 @@ a{
 .product_l_explain{
     width: 250px;
     height: 143px;
-    background: yellow;
+    /* background: yellow; */
+}
+.explain_1{
+    font-size: 14px;
+    padding: 12px 0 0 10px;
+    font-weight: bold;
+}
+.explain_2{
+    padding: 10px 0 0 15px;
+    color: rgba(141, 95, 8, 0.733);
+}
+.explain_3{
+    padding: 15px 0 0 12px;
+}
+.explain_3 span{
+    font-size: 15px;
+    color: red;
+    font-weight: bold;
+}
+.explain_3 s{
+    text-decoration: line-through;
+    color: #999999;
+}
+.explain_4{
+    padding: 18px 0 0 12px;
+}
+.explain_4 span{
+    color: red;
 }
 .product .product_r{
     width: 230px;
