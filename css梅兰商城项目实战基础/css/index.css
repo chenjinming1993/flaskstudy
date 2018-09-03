@@ -296,5 +296,52 @@ a{
 .product .product_r{
     width: 230px;
     height: 345px;
-    background: pink;
+    /* background: pink; */
+    border: 1px solid #dddddd;
+}
+.product_r h2{
+    height: 28px;
+    line-height: 28px;
+    padding-left: 15px;
+    border-bottom: 1px solid #dddddd;
+    color: #3d3c3cef;
+}
+.product_r ul{
+    padding-top: 12px;
+}
+.product_r li{
+    line-height: 23px;
+    list-style: square;
+    margin-left: 20px;
+    color: #bbbbbb;
+    /* background: #3a98ff; */
+}
+.product_r li a{
+    color: #3d3c3cef;
+}
+.Friendlink{
+    width: 970px;
+    height: 80px;
+    margin: 20px auto 0;
+    border-top: 1px solid #dddddd;
+    border-bottom: 2px solid #4d92db;
+}
+.Friendlink p{
+    padding: 25px 0 0 15px;
+    color: #918d8d;
+}
+.Friendlink a{
+    color: #918d8d;
+}
+.aboutus{
+    width: 970px;
+    height: 50px;
+    margin: 20px auto 0;
+}
+.aboutus p{
+    padding-left: 15px;
+    color: #918d8d;
+}
+.aboutus a{
+    color: #918d8d;
 }
