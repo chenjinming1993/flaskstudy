@@ -20,7 +20,50 @@
         console.log(typeof x);
         x = "xz";
         console.log(typeof x);
-        
+        //1.打印1到100
+        for(i=1;i<101;i++){
+            console.log(i);
+        }
+        //2.打印1到100的和
+        var sum = 0;
+        for(var i=1;i<=100;i++){
+            sum += i;
+        }
+        console.log(sum);
+        //3.求1-100之间所有数的和、平均值
+        var sum = 0;
+        for(var i=1;i<=100;i++){
+            sum+=i;
+        }
+        console.log(sum);
+        console.log(sum/100);
+        //4.求1-100之间所有偶数的和、所有奇数的和
+        var oSum=0;
+        var jSum=0;
+        for(var i=1;i<=100;i++){
+            if(i%2==0){
+                oSum+=i;
+            }
+            else jSum+=i;
+        }
+        console.log(oSum);
+        console.log(jSum);
+        // 5.本金10000元，年利率0.3%，5年后有多少钱
+        var money=10000;
+        for(var i=0;i<5;i++){
+            money=money*1.003;
+        }
+        console.log(money);
+        // 6.兔子问题
+        var n1=1;
+        var n2=1;
+        var sum=0;
+        for(var i=3;i<=12;i++){
+            sum=n1+n2;
+            n1=n2;
+            n2=sum;
+        }
+        console.log(sum);
     </script>
 </head>
 <body>
