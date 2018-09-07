@@ -25,8 +25,8 @@
         //     console.log("请输入一个整数");
         // }
         // 上面代码有问题，下面为正确
-        var number = parseInt(prompt("请输入一个整数"));
-        if(number){
+        var number = prompt("请输入一个整数");
+        if(!isNaN(number)){
             var i = 1;
             while(number>=10){
                 number = parseInt(number/10);
