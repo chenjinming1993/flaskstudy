@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script>
+        // 数组的和，平均值
+        var a = [55,3,6,7,8,3,6];
+        var sum = 0;
+        for(var i=0;i<a.length;i++){
+            sum +=a[i];
+        }
+        console.log(sum);
+        console.log(sum/a.length);
+        // 数组的最大值
+        var a = [55,3,6,7,8,358,6];
+        var max = a[0];
+        for(var i=1;i<a.length;i++){
+            if(max>=a[i]){
+                max = max;
+            }
+            else{
+                max = a[i];
+            }
+        }
+        console.log(max);
+        // 数组最大、最小值，以及所在位置
+        var a = [55,3,6,7,8,358,6];
+        var max = a[0];
+        for(var i=1;i<a.length;i++){
+            if(max>=a[i]){
+                max = max;
+            }
+            else{
+                max = a[i];
+            }
+        }
+        console.log(max);
+        for(var i=1;i<a.length;i++){
+            if(max===a[i]){
+                console.log(i+1);
+            }
+        }
+        // 去除数组中的0，生成一个新数组
+        var array = [2,5,0,8,6,0,0,45,0,7,0];
+        var newArray = [];
+        for(var i=0;i<array.length;i++){
+            if(array[i]!==0){
+                newArray[newArray.length] =array[i];
+            }
+        }
+        console.log(newArray);
+        // 翻转数组
+        var a = [55,3,6,7,8,358,6];
+        var newArray = [];
+        for(var i=a.length-1;i>=0;i--){
+            newArray[newArray.length] = a[i];
+        }
+        console.log(newArray);
+        // 冒泡排序，从小到大
+        // type 1
+        var array = [55,3,6,7,8,358,6];
+        function sortNumber(a,b){
+            return a-b;
+        }
+        console.log(array.sort(sortNumber));
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
