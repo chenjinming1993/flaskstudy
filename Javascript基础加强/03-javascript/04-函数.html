@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script>
+        // 求n-m之间所有数的和
+        function getSum(n,m){
+            var sum = 0;
+            for(var i=n;i<=m;i++){
+                sum += i;
+            }
+            console.log(sum);
+        }
+        getSum(1,100);
+        // a,b之和
+        function getAdd(a,b){
+            a = a || 0;
+            b = b || 0;
+            console.log(a+b);
+        }
+        getAdd(null,5);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
