@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script>
+        // 求一组数中的最大值
+        function getMax(array){
+            var array = array || [];
+            var max = array[0];
+            for(var i=1;i<array.length;i++){
+                max = max > array[i] ? max : array[i];
+            }
+            return max;
+        }
+        console.log(getMax([12,5,7,20,6]));
+        // 求一组数中的最小值
+        // 翻转数组
+        // 数组排序
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
