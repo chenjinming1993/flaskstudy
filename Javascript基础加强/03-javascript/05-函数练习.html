@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script>
+        // 求圆的面积
+        function getArea(r){
+            var r = r || 0;
+            return Math.PI*Math.pow(r,2);
+        }
+        console.log(getArea(NaN));
+        // 求圆的周长
+        function getLength(r){
+            var r = r || 0;
+            return 2*Math.PI*r;
+        }
+        console.log(getLength(5));
+        // 求两个数中的最大值
+        function getMax(x,y){
+            var x = x || 0;
+            var y = y || 0;
+            return x > y ? x : y;
+        }
+        console.log(getMax(50,9));
+        // 求三个数中的最大值
+        function getMax_2(x,y,z){
+            var x = x || 0;
+            var y = y || 0;
+            var z = z || 0;
+            var temp = getMax(x,y);
+            return getMax(temp,z);
+        }
+        console.log(getMax_2(50,18,15));
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
