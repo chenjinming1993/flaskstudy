@@ -17,8 +17,56 @@
         }
         console.log(getMax([12,5,7,20,6]));
         // 求一组数中的最小值
+        function getMin(array){
+            var array = array || [];
+            var min = array[0];
+            for(var i=1;i<array.length;i++){
+                min = min > array[i] ? array[i] : min;
+            }
+            return min;
+        }
+        console.log(getMin([12,5,7,20,6]));
         // 翻转数组
+        function getArray(array){
+            var array = array || [];
+            var newArray = [];
+            console.log(array);
+            for(var i=array.length-1;i>=0;i--){
+                newArray[newArray.length] = array[i];
+            }
+            return newArray;
+        }
+        console.log(getArray([12,5,7,20,6]))
         // 数组排序
+        function getSort(array){
+            var array = array || [];
+            for(var i=0;i<array.length-1;i++){
+                var isSort = true;
+                for(var j=0;j<array.length-1-i;j++){
+                    if(array[j]>array[j+1]){
+                        var tmp = array[j+1];
+                        array[j+1] = array[j];
+                        array[j] = tmp;
+                        isSort = false;
+                    }
+                }
+                if(isSort){
+                    break;
+                }
+            }
+            return array;
+        }
+        console.log(getSort([12,5,7,20,6,65,6,3,99,580]));
+        // type2
+        function getSort_2(array){
+            function sortNum(a,b){
+                return b-a;
+            }
+            var array = array || [];
+            // var newArray = sort(array);
+            return array.sort(sortNum);
+        }
+        console.log(getSort_2([12,5,7,20,6,65,6,3,99,580]));
     </script>
 </head>
 <body>
