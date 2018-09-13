@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script>
+        // 1.下面函数输出是什么？
+        // 解析器
+            // 预解析
+                // 先找var、function和参数
+                // var num;
+                // function fun(){
+                //     console.log(num);
+                //     var num = 20;
+                // }
+                // num = 10;
+                // fun();
+                // 找到var和function之后，会把var和function提前
+            // 解析一行执行一行
+                // 执行到fun后，进入到局部作用域
+                    // 预解析
+                    // function fun(){
+                    //     var num;
+                    //     console.log(num);
+                    //     num = 20;
+                    // }
+        var num = 10;
+        fun();
+        function fun(){
+            console.log(num);
+            var num = 20;
+        }
+        // --------------------------------------------------------------
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
