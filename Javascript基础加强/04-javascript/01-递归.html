@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script>
+        // 输入一个数，求这个数的各位数字之和
+        function getAdd(n){
+            if(n<10){
+                return n;
+            }
+            return n%10 +getAdd(parseInt(n/10));
+        }
+        console.log(getAdd(125));
+        // 求斐波那契数列Fibonacci中的第n个数是多少?  1 1 2 3 5 8 13 21...
+        function getF(n){
+            if(n<1){
+                return "输入有误";
+            }
+            // var n = n || 0;
+            if(n==1 || n==2){
+                return 1;
+            }
+            return getF(n-2)+getF(n-1);
+        }
+        console.log(getF(1));
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
