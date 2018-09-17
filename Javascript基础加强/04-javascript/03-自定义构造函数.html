@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script>
+        // 自定义构造函数
+        function Student(name,age,sex){
+            this.name = name;
+            this.age = age;
+            this.sex = sex;
+            this.sayHi = function(){
+                console.log("大家好，我是"+this.name);
+            }
+        }
+        var s1 = new Student("ml",18,0);
+        var s2 = new Student("ls",18,1);
+        s1.sayHi();
+        s2.sayHi();
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

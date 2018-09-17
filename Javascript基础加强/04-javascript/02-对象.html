@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script>
+        // 创建对象
+        // 1.内存中开辟空间，创建一个对象
+        // 2.返回刚刚创建的对象
+        var hero = new Object();
+        // 属性
+        hero.name = "xm";
+        hero.age = 25;
+        // 函数  直接调用的是函数 alert()
+        // 方法  通过对象调用的是方法 hero.move()
+        hero.move = function(){
+            console.log("turn left");
+        }
+        hero.move();
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
