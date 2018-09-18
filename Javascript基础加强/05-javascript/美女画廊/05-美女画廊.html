@@ -22,5 +22,15 @@
         <div class="details"></div>
         <p>选择一个图片</p>
     </div>
+    <script>
+        var links = document.getElementById("a");
+        console.log(links);
+        for(var i=0;i<links.length;i++){
+            var link = links[i];
+            link.onclick = function(){
+                return false;
+            };
+        }
+    </script>
 </body>
 </html>
